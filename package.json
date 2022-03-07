@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
+    "test": "jest",
     "start": "node <name_of_mainjs_file>"
   },
   "author": "",
