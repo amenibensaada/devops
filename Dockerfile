@@ -1,7 +1,7 @@
 # Chrome 80 & Firefox 72
  
 # pull image
-FROM cypress/browsers:node13.6.0-chrome80-ff72
+FROM cypress/included
 # make directory inside container
 RUN mkdir /app
 WORKDIR /app
@@ -10,7 +10,7 @@ COPY . /app
 # execute the tests
 RUN npm install
 RUN $(npm bin)/cypress verify
-RUN $(npm bin)/cypress run --browser chrome
+RUN $(npm bin)/cypress run 
 
 
 FROM node:16
