@@ -9,8 +9,9 @@ WORKDIR /app
 COPY . /app
 # execute the tests
 RUN npm install
-RUN $(npm bin)/cypress verify
-RUN $(npm bin)/cypress run 
+# RUN $(npm bin)/cypress verify
+RUN $(npm bin)/cypress run --record --key ac483821-22d9-4b54-836f-194b34e24a3c
+
 
 
 FROM node:16
