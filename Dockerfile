@@ -1,7 +1,7 @@
 # Chrome 80 & Firefox 72
  
 # pull image
-FROM cypress/included
+FROM cypress/included:9.5.1-node16.14.0-slim-chrome99-ff97
 # make directory inside container
 RUN mkdir /app
 WORKDIR /app
